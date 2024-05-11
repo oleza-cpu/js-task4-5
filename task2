@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <Div>
+        <h1> Hello World</h1>
+    </Div>
+    <script type="text/javascript">
+      function min() {
+    if (arguments.length === 0) {
+        return undefined;
+    }
+    
+    let minNum = arguments[0];
+    for (let i = 1; i < arguments.length; i++) {
+        if (arguments[i] < minNum) {
+            minNum = arguments[i];
+        }
+    }
+    
+    return minNum;
+}
+
+
+console.log(min(3, 5, 1, 8, 2)); 
+console.log(min(10, -3, 7)); 
+console.log(min(4)); 
+console.log(min()); 
+
+
+
+        </script>
+</body>
+</html>
