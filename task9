@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <Div>
+        <h1> Hello World</h1>
+    </Div>
+    <script type="text/javascript">
+    var arr = [];
+
+for (var i = 0; i <= 2; i++) {
+   arr[i] = (function (num) {
+      return function () {
+         console.log(num);
+      };
+   })(i);
+}
+
+arr[0](); 
+arr[arr.length - 1](); 
+
+
+
+
+
+        </script>
+</body>
+</html>
