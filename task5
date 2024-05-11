@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <Div>
+        <h1> Hello World</h1>
+    </Div>
+    <script type="text/javascript">
+      function digitN(k, n) {
+    
+    if (k < 0 || !Number.isInteger(k)) {
+        return -1;
+    }
+
+    
+    const digitsCount = String(k).length;
+    if (n > digitsCount || n <= 0) {
+        return -1;
+    }
+
+    
+    const digit = Number(String(k)[digitsCount - n]);
+    return digit;
+}
+
+
+console.log(digitN(12345, 2)); 
+console.log(digitN(987654321, 5)); 
+console.log(digitN(123, 4)); 
+
+
+
+
+
+
+        </script>
+</body>
+</html>
