@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <Div>
+        <h1> Hello World</h1>
+    </Div>
+    <script type="text/javascript">
+     function createRectangleCalculator() {
+    function isValidSide(side) {
+        return typeof side === 'number' && side > 0;
+    }
+
+    function perimeter(length, width) {
+        if (!isValidSide(length) || !isValidSide(width)) {
+            return "Invalid input. Length and width must be positive numbers.";
+        }
+        return 2 * (length + width);
+    }
+
+    function area(length, width) {
+        if (!isValidSide(length) || !isValidSide(width)) {
+            return "Invalid input. Length and width must be positive numbers.";
+        }
+        return length * width;
+    }
+
+    return {
+        perimeter: perimeter,
+        area: area
+    };
+}
+
+
+const rectangleCalculator = createRectangleCalculator();
+
+
+console.log(rectangleCalculator.perimeter(5, 4)); 
+console.log(rectangleCalculator.area(5, 4));     
+console.log(rectangleCalculator.perimeter(-2, 4)); 
+
+
+
+
+        </script>
+</body>
+</html>
