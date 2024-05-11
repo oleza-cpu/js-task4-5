@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <Div>
+        <h1> Hello World</h1>
+    </Div>
+    <script type="text/javascript">
+     function createArrayIterator(array) {
+    let index = 0; 
+
+    function iterate() {
+        if (index < array.length) {
+            return array[index++];
+        } else {
+            return undefined; 
+        }
+    }
+
+    return iterate;
+}
+
+
+var arr = [5, 3, 7];
+var itr = createArrayIterator(arr);
+console.log(itr()); 
+console.log(itr()); 
+console.log(itr()); 
+console.log(itr()); 
+
+
+
+
+
+        </script>
+</body>
+</html>
