@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <Div>
+        <h1> Hello World</h1>
+    </Div>
+    <script type="text/javascript">
+      function calc(a, b, op) {
+    switch (op) {
+        case 1:
+            return a - b;
+        case 2:
+            return a * b;
+        case 3:
+            return a / b;
+        default:
+            return a + b;
+    }
+}
+
+
+console.log(calc(6, 2, 3)); 
+console.log(calc(5, 3, 1)); 
+console.log(calc(5, 3, 2)); 
+console.log(calc(2, 3, 4)); 
+
+
+
+
+
+        </script>
+</body>
+</html>
